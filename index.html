@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrypter</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/originals/67/9a/8c/679a8ce044245372ca495c4c9c151225.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="encode box">
+        <h1>Encode</h1>
+        <input
+          autocomplete="off"
+          id="encode-message"
+          type="text"
+          placeholder="Message to Encode"
+        />
+        <input
+          autocomplete="off"
+          id="encode-key"
+          type="password"
+          placeholder="Key"
+        />
+        <br />
+        <button onclick="encode()">Encode</button>
+      </div>
+      <div class="decode box">
+        <h1>Decode</h1>
+        <input
+          id="decode-message"
+          autocomplete="off"
+          type="text"
+          placeholder="Message to Decode"
+        />
+        <input
+          autocomplete="off"
+          id="decode-key"
+          type="password"
+          placeholder="Key"
+        />
+        <br />
+        <button onclick="decode()">Decode</button>
+      </div>
+    </div>
+    <textarea name="output" id="output" placeholder="Output"></textarea>
+    <script src="functions.js"></script>
+  </body>
+</html>
