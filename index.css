@@ -81,7 +81,7 @@ textarea {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   button {
     width: 80%;
   }
@@ -90,5 +90,15 @@ textarea {
   }
   input {
     width: 80%;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    column-gap: 0vw;
+  }
+  .box {
+    width: 80%;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
   }
 }
